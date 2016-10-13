@@ -13,5 +13,8 @@ Imports:
     wbstats,
     countrycode,
     dplyr,
-    ggplot2
+    ggplot2,
+    scales,
+    ggthemes,
+    plotly
 RoxygenNote: 5.0.1
