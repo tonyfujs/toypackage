@@ -10,7 +10,8 @@
 
 plot_wdi <- function(wdi_df){
 
-  p <- ggplot(data = wdi_df, aes(x = date, y = value, group = country)) + geom_line()
+  p <- ggplot(data = wdi_df, aes(x = date, y = value, group = country)) + geom_line(aes(colour = value))
+  p <- p + ylab("value") + xlab("Year")
 
   return(p)
 }
